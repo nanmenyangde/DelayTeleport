@@ -1,0 +1,28 @@
+name: DelayTeleport
+version: '${project.version}'
+main: com.github.nanmenyangde.delayteleport.DelayTeleport
+api-version: 1.17
+authors: [ nanmenyangde ]
+description: Delayed Teleport Plugin
+
+commands:
+  dtp:
+    description: Delayed teleport.
+    usage: |
+            /<command> [PLAYER] [WORLD] [X Y Z]
+  rtp:
+    description: Random teleport.
+    usage: |
+            /<command> [PLAYER]
+permissions:
+  DelayTeleport.*:
+    children:
+      DelayTeleport.dtp: true
+      DelayTeleport.rtp: true
+      DelayTeleport.other: true
+  DelayTeleport.dtp:
+    default: op
+  DelayTeleport.rtp:
+    default: op
+  DelayTeleport.other:
+    default: op

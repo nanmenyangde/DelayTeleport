@@ -1,0 +1,20 @@
+# 无权限的玩家试图执行命令时发送的消息
+noPermissionMessage: "§4你没有权限执行该命令！"
+# 传送前的等待时间
+teleportDelaySeconds: 5
+# 玩家开始等待传送时发送的消息
+preTeleportMessage: "§e即将在5秒后传送..."
+# 玩家成功传送时发送的消息
+teleportSuccessMessage: "§2传送成功！"
+# 玩家中断传送时发送的消息
+teleportSuspendMessage: "§4传送已中断！"
+
+# X坐标为x的玩家随机传送目的地的X坐标范围，可能到达的位置位于[x-range,x+range]之间
+XCoordinateRange: 1000
+# Z坐标为z的玩家随机传送目的地的Z坐标范围，可能到达的位置位于[z-range,z+range]之间
+ZCoordinateRange: 1000
+# 允许使用随机传送的世界
+allowRtpWorlds:
+  - world
+# 玩家在禁止使用随机传送的世界试图随机传送时发送的消息
+denyRtpMessage: "§4该世界禁止使用随机传送！"
